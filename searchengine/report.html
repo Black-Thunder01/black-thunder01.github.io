@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+body{
+  margin-top: 40px;
+  height:100%;
+  background-color: #13FEC3;
+}
+h1{
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Times;
+  color: blue;
+
+}
+p{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+  font-family: monospace;
+}
+.container{
+  text-align: center;
+  background: URL("data:image/jpeg;base64,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");
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+#bx{
+    width: 40%;
+    height: 20px;
+    margin-top: 20px;
+    box-shadow: 3px 5px grey;
+  }
+input{
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: monospace;
+  font-stretch: condensed;
+}
+.sndbtn{
+  width: 15%;
+  margin-top: 10px;
+  height: 30px;
+  color: blue;
+  box-shadow: 3px 3px silver;
+  font-size: 15px;
+  font-stretch: condensed;
+  font-style: italic;
+  font-weight: bold;
+}
+.thanks{
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Times;
+  font-stretch: condensed;
+  color: red;
+}
+</style>
+
+<body>
+  <div class="container-fluid">
+  <h1>REPORT PLATFORM</h1>
+    <p>
+      We are very loyal to our SearchIt Users, so please hit us up with your complaints, your inquiries,your likes and suggestions on SearchIt. so please let us know on what to improve on our site and its feactures <i class="fa fa-smile-o"></i>.
+    </p>
+ <div class="container">
+  <form action="input.html">
+      <input type="text" placeholder="NAME" class="text-control" id="bx"required><br>
+      <input type="text" placeholder="E-MAIL ADDRESS" class="text-control" id="bx" required><br>
+      <input type="text" placeholder="Comments/Suggestions" class="text-control" id="bx" required><br>
+      <button type="submit" value="send" class="sndbtn">Send <i class="fa fa-paper-plane"></i></button>
+
+  </form>
+ </div>
+<p >
+  Please be assured  that your input (Suggestions and Comments) will be read and we will decide on whether to imply your ideas for the sake of our users and compatability of the site.
+</p>
+<p class="thanks">
+  THANK YOU!!!
+</p>
+</div>
+</body>
