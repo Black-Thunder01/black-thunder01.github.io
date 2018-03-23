@@ -12,21 +12,22 @@
 </style>
 
 <body>
-  <h> Largest number tester </h><br>
-
+<h1>Largest Vaue Finder.</h1>
+<h>Enter desired values:</h>
 <div class="container">
-
 <input type="number" id="x" required></input><br>
 <input type="number" id="y" required></input><br>
 <input type="number" id="z" required></input><br>
 <input type="button" onclick= "compare()" class="button" value="submit"></input>
+<p>Results:</p><p id="large"></p>
 </div>
 <script type="text/javascript">
 function compare() {
   first = document.getElementById("x").value;
   second = document.getElementById("y").value;
   third =  document.getElementById("z").value;
-     console.log( Math.max(first, second, third))
+     console.log( Math.max(first, second, third));
+document.getElementById("large").innerHTML = Math.max(first, second, third);
 }
 </script>
 
