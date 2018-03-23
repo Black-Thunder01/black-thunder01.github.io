@@ -24,7 +24,7 @@
 function myValue(){
   var a = document.getElementById("v1").value;
   var b = document.getElementById("v2").value;
-  var c = a + b;
+  var sum = (document.getElementById("v1").value) + (document.getElementById("v2").value);
 
   if(a==75){
   var v = " a is true"
@@ -32,8 +32,8 @@ function myValue(){
   if(b==75){
   var v = " b is true"
   }
-  if(c == 75){
-  var v = " c is true"
+  if(sum == 75){
+  var v = " The sum is true"
   }
   console.log( v );
 document.getElementById("value").innerHTML = v ;
