@@ -12,10 +12,10 @@
 function myHours(){
 var x = document.getElementById("s1").value;//convert to hours//
 var k = (x / 60);
-var h = Math.floor( k )
+var h = Math.round( k )
 r = k % 1;
 var bm = r*60;
-var m = Math.floor( bm );
+var m = Math.round( bm );
 console.log( h + " hours "  + m + " minutes" );
 document.getElementById("hrsRslts").innerHTML = h + " hours "  + m + " minutes";
 }
