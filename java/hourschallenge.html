@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <h><center><strong>Turn any number into hours, minutes and seconds.</strong></center><h>
+  <center><strong><h1>Hours converter.</h1></strong></center>
+  <p>Enter your value</p>
+  <div class="container">
+<input type="number" placeholder="units" id="s1"></input><br>
+<input type="button" class="button" value="Change to hours" onclick="myHours()"></input>
+<p>Results: </p><br>
+<p id="hrsRslts"></p>
 <script>
-var x = 71;
+function myHours(){
+var x = document.getElementById("s1").value;//convert to hours//
 var k = (x / 60);
 var h = Math.floor( k )
 r = k % 1;
 var bm = r*60;
 var m = Math.floor( bm );
 console.log( h + " hours "  + m + " minutes" );
+document.getElementById("hrsRslts").innerHTML = h + " hours "  + m + " minutes";
+}
 </script>
 </body>
 </html>
