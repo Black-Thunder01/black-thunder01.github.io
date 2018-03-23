@@ -1,23 +1,43 @@
 <html>
+ <style>
+.button{
+  font-size: 18;
+  font-weight: bold;
+  font-style: italic;
+  font-stretch: condensed;
+  font-family: monospace;
+}
+</style>
 <body>
- 
-  <h><strong><center>true if value is 75</center></strong></h>
+ <h1> 75 VALUE FINDER</h1>
+<p> Enter your desired value</p>
+<div class="container2">
+  <input type="number" placeholder="value#1" id="v1"></input><br>
+  <input type="number" placeholder="Value#1" id="v2"></input><br>
+  <input type="button" class="button" value="Find 75" onclick="myValue()"></input><br>
+  <p> Results: </p>
+  <p id="value"></p>
+</div>
+  function myValue(){
+  var a = document.getElementById("v1").value;
+  var b = document.getElementById("v2").value;
+  var c = a + b;
+
+  if(a==75){
+  var v = " a is true"
+  }
+  if(b==75){
+  var v = " b is true"
+  }
+  if(c == 75){
+  var v =" c is true"
+  }
+  console.log( v );
+document.getElementById("value").innerHTML = v ;
+}
+
   
 <script type="text/javascript">
-var a =75;
-var b =7;
-var c = a + b;
-
-if(a==75){
-var v = " a is true"
-}
-if(b==75){
-var v = " b is true"
-}
-if(c == 75){
-var v =" c is true"
-}
-console.log( v );
 
 </script>
 </body>
